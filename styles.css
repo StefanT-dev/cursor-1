@@ -582,6 +582,15 @@ p {
     --shell: min(1120px, calc(100% - 1.5rem));
   }
 
+  .offer {
+    grid-template-columns: 1fr;
+    gap: 0.35rem 0;
+  }
+
+  .offer__index {
+    padding-top: 0;
+  }
+
   .hero__actions,
   .contact__actions {
     flex-direction: column;
