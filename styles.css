@@ -160,29 +160,29 @@ p {
 
 .nav-toggle {
   display: none;
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 1px solid var(--line);
-  background: transparent;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid rgba(16, 32, 28, 0.28);
+  background: rgba(255, 255, 255, 0.55);
   padding: 0;
   cursor: pointer;
 }
 
-.nav-toggle span {
+.nav-toggle__bar {
   display: block;
-  width: 1.1rem;
-  height: 1.5px;
-  margin: 0.28rem auto;
+  width: 1.2rem;
+  height: 2px;
+  margin: 0.32rem auto;
   background: var(--ink);
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-.nav-toggle[aria-expanded="true"] span:first-of-type {
-  transform: translateY(3.5px) rotate(45deg);
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:first-child {
+  transform: translateY(5px) rotate(45deg);
 }
 
-.nav-toggle[aria-expanded="true"] span:last-of-type {
-  transform: translateY(-3.5px) rotate(-45deg);
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:last-child {
+  transform: translateY(-5px) rotate(-45deg);
 }
 
 .mobile-nav {
